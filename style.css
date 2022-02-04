@@ -5,6 +5,7 @@ header{
 
 body{
     margin: 0;
+    font-family:'Roboto', sans-serif;
 }
 
 /* section header-text */
@@ -49,4 +50,33 @@ body{
 
 .header-image{
     margin: 30px 30px 0 30px;
+}
+
+/* main section */
+
+.main-text h2{
+    margin-bottom: 5px;
+}
+
+.main-text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-items{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.main-item{
+    text-align: center;
+    margin: 0 20px 0;
+}
+
+.main-item button{
+    background-color: red;
+    color: white;
+    padding: 4px 4px;
+    font-weight: bold;
 }
