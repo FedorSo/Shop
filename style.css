@@ -72,6 +72,7 @@ body{
 .main-item{
     text-align: center;
     margin: 0 20px 0;
+    box-shadow: 10px 12px 10px rgba(60, 54, 78, 0.178);
 }
 
 .main-item button{
@@ -79,4 +80,40 @@ body{
     color: white;
     padding: 4px 4px;
     font-weight: bold;
+}
+
+/* six main section */
+
+.six-main-text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.six-main-items{
+    display: flex;
+    justify-content: center;
+}
+
+.six-main-item{
+    text-align: center;
+    margin: 10px;
+    box-shadow: 10px 12px 10px rgba(60, 54, 78, 0.178);
+}
+
+.six-main-item button{
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.six-name-item_1{
+    font-weight: bold;
+}
+
+.six-name-item_2{
+    font-weight: bold;
+    color: red;
 }

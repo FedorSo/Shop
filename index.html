@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Images/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=sans-serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=sans-serif&display=swap"
+        rel="stylesheet">
     <title>Магазин Футболок</title>
 </head>
 
@@ -15,13 +16,13 @@
 
     <header>
 
-            <div class="header-text">
+        <div class="header-text">
 
-                <span class="span_1">ФУТБОЛКИ С ПРИНТАМИ</span><br>
-                <span class="span_2">499<sup class="sup">руб.</sup></span><br>
-                <span class="span_3">ПОЧЕМУ ТАК ДЁШЕВО?</span><br>
+            <span class="span_1">ФУТБОЛКИ С ПРИНТАМИ</span><br>
+            <span class="span_2">499<sup class="sup">руб.</sup></span><br>
+            <span class="span_3">ПОЧЕМУ ТАК ДЁШЕВО?</span><br>
 
-            </div>
+        </div>
 
         <div class="header-images">
 
@@ -53,20 +54,81 @@
 
         <div class="main-items">
             <div class="main-item">
-                <img src="Images/photo.png" alt="" height="300"><br>
+                <img onmouseover="console.log('Пользователь навёл на футболку')" src="Images/photo.png" alt=""
+                    height="300"><br>
                 <span class="item-name">Футболка</span><br>
                 <span class="item-name">499 руб.</span><br>
-                <button>Добавить в заказ</button>
+                <button onclick="alert('Товар в корзине:\n1 товара')">Добавить в заказ</button>
             </div>
 
             <div class="main-item">
-                <img src="Images/photo_1.png" alt="" height="300"><br>
+                <img onmouseleave="console.log('Пользователь навёл на футболку')" src="Images/photo_1.png" alt=""
+                    height="300"><br>
                 <span class="item-name">Футболка</span><br>
                 <span class="item-name">499 руб.</span><br>
-                <button>Добавить в заказ</button>
+                <button onclick="alert('Товар в корзине:\n2 товара')">Добавить в заказ</button>
             </div>
         </div>
     </main>
+
+    <section>
+
+        <div class="six-main-text">
+            <h2>Как выбрать размер</h2>
+        </div>
+
+
+        <div class="six-main-items">
+
+            <div class="six-main-item">
+                <img src="Images/photo2.png" alt="" height="400"><br>
+                <span class="six-name-item_1">Футболка</span><br>
+                <span class="six-name-item_2">499 Р</span><br>
+                <button>ДОБАВИТЬ В ЗАКАЗ</button>
+            </div>
+
+            <div class="six-main-item">
+                <img src="Images/photo2.png" alt="" height="400"><br>
+                <span class="six-name-item_1">Футболка</span><br>
+                <span class="six-name-item_2">499 Р</span><br>
+                <button>ДОБАВИТЬ В ЗАКАЗ</button>
+            </div>
+
+            <div class="six-main-item">
+                <img src="Images/photo2.png" alt="" height="400"><br>
+                <span class="six-name-item_1">Футболка</span><br>
+                <span class="six-name-item_2">499 Р</span><br>
+                <button>ДОБАВИТЬ В ЗАКАЗ</button>
+            </div>
+
+        </div>
+
+        <div class="six-main-items">
+
+            <div class="six-main-item">
+                <img src="Images/photo2.png" alt="" height="400"><br>
+                <span class="six-name-item_1">Футболка</span><br>
+                <span class="six-name-item_2">499 Р</span><br>
+                <button>ДОБАВИТЬ В ЗАКАЗ</button>
+            </div>
+
+            <div class="six-main-item">
+                <img src="Images/photo2.png" alt="" height="400"><br>
+                <span class="six-name-item_1">Футболка</span><br>
+                <span class="six-name-item_2">499 Р</span><br>
+                <button>ДОБАВИТЬ В ЗАКАЗ</button>
+            </div>
+
+            <div class="six-main-item">
+                <img src="Images/photo2.png" alt="" height="400"><br>
+                <span class="six-name-item_1">Футболка</span><br>
+                <span class="six-name-item_2">499 Р</span><br>
+                <button>ДОБАВИТЬ В ЗАКАЗ</button>
+            </div>
+            
+        </div>
+
+    </section>
 
 </body>
 
