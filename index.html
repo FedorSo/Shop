@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Images/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=sans-serif&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"rel="stylesheet">
     <title>Магазин Футболок</title>
 </head>
 
@@ -68,6 +67,7 @@
                 <span class="item-name">499 руб.</span><br>
                 <button onclick="alert('Товар в корзине:\n2 товара')">Добавить в заказ</button>
             </div>
+
         </div>
     </main>
 
@@ -125,10 +125,69 @@
                 <span class="six-name-item_2">499 Р</span><br>
                 <button>ДОБАВИТЬ В ЗАКАЗ</button>
             </div>
-            
+
         </div>
 
     </section>
+
+    <section class="lotery">
+
+        <div class="lotery-text">
+            <span class="lotery-text_1">РОЗЫГРЫШ</span><br>
+            <span class="lotery-text_2">10 000</span><sup>руб.</sup><br>
+            <span class="lotery-text_3">Среди обладателей<br>купонов</span><br>
+            <span class="lotery-text_4">Вечером 1 июня команда розыграет приз в прямом эфире!</span>
+        </div>
+
+        <div class="lotery-item">
+            <img src="Images/money.jpg" alt="" width="160">
+        </div>
+
+    </section>
+
+    <!-- Заказ -->
+
+    <section class="order">
+
+        <h2>ВАШ ЗАКАЗ</h2>
+        <div class="yellow">
+            <h3>Корзина пуста</h3>
+        </div>
+        <div class="grey">В корзине пусто!</div>
+
+    </section>
+
+    <section class="order_section">
+
+        <form action="Какойто файл">
+            <h2>Оформление заказа</h2>
+
+            <label for="name">Имя</label><br>
+            <input type="text" id="name" name="name" placeholder="Имя" required><br>
+
+            <label for="fname">Фамилия</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Фамилия" required><br>
+
+            <label for="email">Электронная почта</label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
+
+            <label for="fname">Телефон</label><br>
+            <input type="text" id="phone" name="phone" placeholder="Номер телефона" required><br>
+            
+            <p>Оплата картой</p>
+            <hr>
+
+            <button class="order-button">Перейти к оплате</button>
+
+        </form>
+
+    </section>
+
+    <!-- Функция тех. поддержки -->
+
+    <img class="tp" onclick="print_contact()" src="Images/tp.png" alt="" width="80">
+
+    <script src="script.js"></script>
 
 </body>
 

@@ -117,3 +117,108 @@ body{
     font-weight: bold;
     color: red;
 }
+
+/* lotery section */
+
+.lotery{
+    background-color: red;
+    padding: 0 0 0 30px;
+    color: white;
+    box-shadow: 10px 10px 7px rgba(41, 46, 90, 0.281);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 20px;
+}
+
+.lotery-item img{
+    display: block;
+}
+
+.lotery-text{
+    padding: 5px;
+}
+
+.lotery-text_1{
+    font-size: larger;
+}
+
+.lotery-text_2{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.lotery-text_3{
+    font-weight: bold;
+    color: yellow;
+    font-size: large;
+}
+
+/* order section */
+
+.order{
+    margin-left: 50px;
+}
+
+.yellow{
+    background-color: yellow;
+    margin: 30px 0 30px;
+    padding: 10px 0 10px 30px;
+}
+
+.grey{
+    color: grey;
+}
+
+.order_section{
+    display: flex;
+    justify-content: center;
+}
+
+.order_section p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #6cc76c;
+}
+
+.order_section hr{
+    width: 100%;
+    border: none;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.671);
+    margin-bottom: 24px;
+}
+
+.order-button{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: #6cc76c;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.order-button:hover{
+    background-color: #5a9b5a;
+}
+
+.order_section label{
+    font-weight: bold;
+}
+
+.order_section input{
+    padding: 10px;
+    margin: 10px 0 10px;
+    width: 300px;
+    border: 1px ;
+    background-color: rgb(214, 214, 214);
+    color: rgb(80, 80, 80);
+    box-shadow: 2px 2px 7px 4px rgba(0, 0, 0, 0.336);
+}
+
+/* tp */
+
+.tp{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
