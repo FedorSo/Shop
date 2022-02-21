@@ -7,3 +7,10 @@ function print_contact(){
 
     console.log("Пользователь обратилься в техническую поддержку");
 }
+
+function free_prize(){
+
+    alert("Поздравляем!\nВы получили подарок\nПерейдите по этой ссылке https://www.minecraft.net/ru-ru/download\nЧтобы забрать подарок");
+
+    console.log("Пользователь взял подарок");
+}
