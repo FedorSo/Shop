@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Images/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Магазин Футболок</title>
 </head>
 
@@ -27,17 +28,18 @@
 
 
             <div class="header-image">
-                <center><img src="Images/sale.png" alt="" height="70" width="105"><br>
+                <center><img class="animate_animated animate__heartBeat wow" src="Images/sale.png" alt="" height="70" width="105"><br>
                     Низкие цены</center>
             </div>
 
             <div class="header-image">
-                <center><img src="Images/gruzovik.png" alt="" height="90" width="98"><br>
+                <center><img class="animate__animated animate__lightSpeedInRight wow" src="Images/gruzovik.png" alt=""
+                        height="90" width="98"><br>
                     Доставка по всей России</center>
             </div>
 
             <div class="header-image">
-                <center><img src="Images/hit.png" alt="" height="80" width="80"><br>
+                <center><img class="animate_animated animate__heartBeat wow" src="Images/hit.png" alt="" height="80" width="80"><br>
                     Только хиты</center>
             </div>
 
@@ -159,7 +161,7 @@
 
     <section class="order_section">
 
-        <form action="Какойто файл">
+        <form class="animate__animated animate__backInLeft wow" action="Какойто файл">
             <h2>Оформление заказа</h2>
 
             <label for="name">Имя</label><br>
@@ -173,7 +175,7 @@
 
             <label for="fname">Телефон</label><br>
             <input type="text" id="phone" name="phone" placeholder="Номер телефона" required><br>
-            
+
             <p>Оплата картой</p>
             <hr>
 
@@ -190,9 +192,15 @@
     <!-- Подарок -->
 
 
-    <img class="podarok" onclick="free_prize()" src="Images/podarok.png" alt="" width="100">
+    <img class="podarok animate__animated animate__swing" onclick="free_prize()" src="Images/podarok.png" alt="" width="100">
 
     <script src="script.js"></script>
+
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>
