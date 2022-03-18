@@ -192,7 +192,18 @@
     <!-- Подарок -->
 
 
-    <img class="podarok animate__animated animate__swing" onclick="free_prize()" src="Images/podarok.png" alt="" width="100">
+    <img class="podarok animate__animated animate__swing" id="myBtn" src="Images/podarok.png" alt="" width="100">
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content animate__animated animate__fadeInDown">
+
+            <span class="close" id="close">&times;</span>
+            <p>Поздравляем!<br>Вы получили подарок<br>Перейдите по этой ссылке<br>https://www.minecraft.net/ru-ru/download<br>Чтобы забрать подарок</p>
+
+        </div>
+
+    </div>
 
     <script src="script.js"></script>
 

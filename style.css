@@ -272,3 +272,37 @@ body{
     cursor: pointer;
     transform: scale(1.1);
 }
+
+
+.modal{
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(8, 6, 0, 0.4);
+}
+
+.modal-content{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 6px 6px 10px 2px rgba(29, 62, 86, 0.18);
+}
+
+.close{
+    color: rgb(161, 161, 161);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover{
+    cursor: pointer;
+    color: #000;
+}
