@@ -306,3 +306,46 @@ body{
     cursor: pointer;
     color: #000;
 }
+
+.reset{
+	background-color:#d91f1f;
+	border-radius:8px;
+    color: white;
+	font-size: 14px;
+	padding: 7px 30px;
+    margin: 0 20px 20px;
+}
+
+.reset:hover {
+    cursor:pointer;
+	background-color:#b50606;
+}
+
+.send-rating{
+	background-color:#1fa7d9;
+	border-radius:8px;
+    color: white;
+	font-size: 14px;
+	padding: 7px 30px;
+    margin-bottom: 20px;
+}
+
+.send-rating:hover {
+    cursor:pointer;
+	background-color:#069eb5;
+}
+
+.rating-button{
+    display: flex;
+    justify-content: center;
+}
+
+.rating-star{
+    display: flex;
+    justify-content: center;
+}
+
+.rating{
+    text-align: center;
+    margin-bottom: 50px;
+}
