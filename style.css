@@ -92,6 +92,7 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
+    align-items: center;
 }
 
 .main-item{
@@ -108,6 +109,15 @@ body{
     margin: 10px 0 15px;
     border-radius: 6px;
     cursor: pointer;
+}
+
+.arrow{
+    transition: 0.2s ease-in-out;
+}
+
+.arrow:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 /* six main section */
@@ -259,7 +269,7 @@ body{
     transform: scale(1.1);
 }
 
-/* Podarok */
+/*Podarok */
 
 .podarok{
     position: fixed;
@@ -287,7 +297,7 @@ body{
 }
 
 .modal-content{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(230, 230, 230);
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -306,6 +316,41 @@ body{
     cursor: pointer;
     color: #000;
 }
+
+.modal-tp{
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(8, 6, 0, 0.4);
+}
+
+.modal-content-tp{
+    background-color: rgb(230, 230, 230);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 6px 6px 10px 2px rgba(29, 62, 86, 0.18);
+}
+
+.close-tp{
+    color: rgb(161, 161, 161);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-tp:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+/* Рейтинг сайта */
 
 .reset{
 	background-color:#d91f1f;
@@ -349,3 +394,4 @@ body{
     text-align: center;
     margin-bottom: 50px;
 }
+

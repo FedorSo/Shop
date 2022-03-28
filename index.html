@@ -54,8 +54,13 @@
         </div>
 
         <div class="main-items">
+
+            <div class="arrow">
+                <img src="Images/left.PNG" alt="" width="50" onclick="rand_tshirt()">
+            </div>
+
             <div class="main-item">
-                <img onmouseover="console.log('Пользователь навёл на футболку')" src="Images/photo.png" alt=""
+                <img src="Images/tshirt-1.jpg" alt=""
                     height="300"><br>
                 <span class="item-name">Футболка</span><br>
                 <span class="item-name">499 руб.</span><br>
@@ -63,11 +68,15 @@
             </div>
 
             <div class="main-item">
-                <img onmouseleave="console.log('Пользователь навёл на футболку')" src="Images/photo_1.png" alt=""
+                <img src="Images/tshirt-2.jpg" alt=""
                     height="300"><br>
                 <span class="item-name">Футболка</span><br>
                 <span class="item-name">499 руб.</span><br>
                 <button onclick="alert('Товар в корзине:\n2 товара')">Добавить в заказ</button>
+            </div>
+
+            <div class="arrow">
+                <img src="Images/right.PNG" alt="" width="50" onclick="rand_tshirt()">
             </div>
 
         </div>
@@ -187,12 +196,23 @@
 
     <!-- Функция тех. поддержки -->
 
-    <img class="tp" onclick="print_contact()" src="Images/tp.png" alt="" width="80">
+    <img class="tp" id="btnTp" src="Images/tp.png" alt="" width="80">
+
+    <div id="modalTp" class="modal-tp">
+
+        <div class="modal-content-tp animate__animated animate__fadeInDown">
+
+            <span class="close-tp" id="closeTp">&times;</span>
+            <p>Skype: helper<br>Telegram: @helper<br>Тел. 8901006029</p>
+
+        </div>
+
+    </div>
 
     <!-- Подарок -->
 
 
-    <img class="podarok animate__animated animate__swing" id="myBtn" src="Images/podarok.png" alt="" width="100">
+    <img class="podarok" id="myBtn" src="Images/podarok.png" alt="" width="100">
 
     <div id="myModal" class="modal">
 

@@ -1,12 +1,12 @@
-function print_contact(){
+// function print_contact(){
 
-    const skype= "helper";
-    const telegram= "@helper";
+//     const skype= "helper";
+//     const telegram= "@helper";
 
-    alert(`Skype: ${skype} \nTelegram: ${telegram} \nТел. 8901006029`);
+//     alert(`Skype: ${skype} \nTelegram: ${telegram} \nТел. 8901006029`);
 
-    console.log("Пользователь обратилься в техническую поддержку");
-}
+//     console.log("Пользователь обратилься в техническую поддержку");
+// }
 
 // function free_prize(){
 
@@ -15,30 +15,13 @@ function print_contact(){
 //     console.log("Пользователь взял подарок");
 // }
 
-const modal = document.getElementById("myModal");
-const openBtn = document.getElementById("myBtn");
-const closeBtn = document.getElementById("close");
-
-openBtn.onclick = function (){
-    modal.style.display = "block";
-    console.log("Модальное окно");
-}
-
-closeBtn.onclick = function (){
-    modal.style.display = "none";
-}
-
-window.onclick = function (event){
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-}
+// Рейтинг
 
 let siteRating = 0;
 
 function star(starNumber) {
 
-    siteRating = starNumber
+    siteRating = starNumber;
 
     starNumber = starNumber - 1;
 
@@ -73,6 +56,8 @@ function star(starNumber) {
     }
 }
 
+// Сброс рейтинга
+
 function resetRating() {
 
     siteRating = 0;
@@ -86,6 +71,8 @@ function resetRating() {
     }
 }
 
+// Отправка рейтинга
+
 const setRatingBtn = document.getElementById("sendRating");
 
 setRatingBtn.addEventListener("click", function (){
@@ -94,7 +81,7 @@ setRatingBtn.addEventListener("click", function (){
 
     switch (siteRating) {
         case 1:
-            text = "Спасибо за ваш отзыв!\nВы поставили 1 Балл";
+            text = "Мы ожидали чего-то большего.\nВы поставили 1 Балл";
             break;
         case 2:
             text = "Спасибо за ваш отзыв!\nВы поставили 2 Балла";
@@ -109,10 +96,57 @@ setRatingBtn.addEventListener("click", function (){
             text = "Мы очень рады что вы поставили 5 баллов!";
             break
         default:
-            text = "Поставте оценку сайта";
+            text = "Пожалуйста поставте оценку сайта";
             break
     }
-    console.log("Рейтинг отправлен!");
+    // console.log("Рейтинг отправлен!");
     document. getElementById("ratingText").innerText = text;
 
 })
+
+function rand_tshirt() {
+    // console.log("Привет");
+
+    
+}
+
+// Подарок
+
+const modalGift = document.getElementById("myModal");
+const openGift = document.getElementById("myBtn");
+const closeGift = document.getElementById("close");
+
+openGift.onclick = function (){
+    modalGift.style.display = "block";
+    // console.log("Модальное окно");
+}
+
+closeGift.onclick = function (){
+    modalGift.style.display = "none";
+}
+
+// Тех. поддержка
+
+const modalTp = document.getElementById("modalTp");
+const openTp = document.getElementById("btnTp");
+const closeTp = document.getElementById("closeTp");
+
+openTp.onclick = function (){
+    modalTp.style.display = "block";
+//     console.log("Модальное окно");
+}
+
+closeTp.onclick = function (){
+    modalTp.style.display = "none";
+}
+
+window.onclick = function (event){
+
+    if (event.target === modalGift) {
+        modalGift.style.display = "none";
+    }
+
+    if (event.target === modalTp) {
+        modalTp.style.display = "none";
+    }
+}
