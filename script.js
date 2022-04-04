@@ -107,7 +107,24 @@ setRatingBtn.addEventListener("click", function (){
 function rand_tshirt() {
     // console.log("Привет");
 
-    
+    const arr = ["Images/tshirt-1.jpg", "Images/tshirt-2.jpg", "Images/tshirt-3.jpg", "Images/tshirt-6.jpeg", "Images/tshirt-9.jpg"];
+
+    // console.log(arr[0]);
+    // console.log(arr[1]);
+    // console.log(arr[2]);
+
+
+// Первая картинка
+    let rand = Math.floor(Math.random() * arr.length);
+
+    document.getElementById("ts-image-1").src = arr.splice(rand, 1)[0];
+
+
+// Вторая карминка
+    rand = Math.floor(Math.random() * arr.length);
+
+    document.getElementById("ts-image-2").src = arr.splice(rand, 1)[0];
+
 }
 
 // Подарок
@@ -125,6 +142,12 @@ closeGift.onclick = function (){
     modalGift.style.display = "none";
 }
 
+modalGift.onclick = function (event){
+    if (event.target === modalGift) {
+        modalGift.style.display = "none";
+    }
+}
+
 // Тех. поддержка
 
 const modalTp = document.getElementById("modalTp");
@@ -140,12 +163,7 @@ closeTp.onclick = function (){
     modalTp.style.display = "none";
 }
 
-window.onclick = function (event){
-
-    if (event.target === modalGift) {
-        modalGift.style.display = "none";
-    }
-
+modalTp.onclick = function (event){
     if (event.target === modalTp) {
         modalTp.style.display = "none";
     }
