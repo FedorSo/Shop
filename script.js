@@ -107,7 +107,7 @@ setRatingBtn.addEventListener("click", function (){
 function rand_tshirt() {
     // console.log("Привет");
 
-    const arr = ["Images/tshirt-1.jpg", "Images/tshirt-2.jpg", "Images/tshirt-3.jpg", "Images/tshirt-6.jpeg", "Images/tshirt-9.jpg"];
+    const arr = ["Images/tshirt-1.jpg", "Images/tshirt-2.jpg", "Images/tshirt-3.jpg", "Images/tshirt-6.png", "Images/tshirt-9.png", "Images/tshirt-11.png", "Images/tshirt-12.png","Images/tshirt-13.png", "Images/tshirt-14.png", "Images/tshirt-15.png", "Images/tshirt-16.png"];
 
     // console.log(arr[0]);
     // console.log(arr[1]);
