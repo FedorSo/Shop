@@ -1,6 +1,6 @@
 header{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(111,35,35,1) 0%, rgba(255,0,0,1) 0%, rgba(242,237,71,1) 100%);
+    background: rgb(44,211,130);
+    background: linear-gradient(130deg, rgba(44,211,130,1) 39%, rgba(44,44,211,1) 92%);
     padding: 20px 0;
 }
 
@@ -9,7 +9,7 @@ body{
     font-family: 'Exo 2';
 }
 
-/* section header-text */
+// section header-text
 
 .header-text{
     padding-top: 10px;
@@ -64,7 +64,7 @@ body{
     margin-left: 10px;
 }
 
-/* section header-image */
+// section header-image
 
 .header-images{
     display: flex;
@@ -77,15 +77,15 @@ body{
     margin: 30px 30px 0 30px;
 }
 
-/* main section */
-
-.main-text h2{
-    margin-bottom: 5px;
-}
+// main section
 
 .main-text{
     text-align: center;
     margin-bottom: 30px;
+
+    h2{
+        margin-bottom: 5px;
+    }
 }
 
 .main-items{
@@ -99,21 +99,21 @@ body{
     text-align: center;
     margin: 0 20px 0;
     box-shadow: 10px 12px 10px rgba(60, 54, 78, 0.178);
-}
 
-.main-item button{
-    background-color: rgb(255, 174, 0);
-    color: white;
-    padding: 6px 4px;
-    font-weight: bold;
-    margin: 10px 0 15px;
-    border-radius: 7px;
-    border: 0px;
-}
+    button{
+        background-color: rgb(255, 174, 0);
+        color: white;
+        padding: 6px 4px;
+        font-weight: bold;
+        margin: 10px 0 15px;
+        border-radius: 7px;
+        border: 0px;
 
-.main-item button:hover{
-    background-color: rgb(214, 146, 0);
-    cursor: pointer;
+        &:hover{
+            background-color: rgb(214, 146, 0);
+            cursor: pointer;
+        }
+    }
 }
 
 .item-name-1{
@@ -123,14 +123,14 @@ body{
 
 .arrow{
     transition: 0.2s ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
 }
 
-.arrow:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-/* six main section */
+// six main section
 
 .six-main-text{
     text-align: center;
@@ -146,22 +146,21 @@ body{
     text-align: center;
     margin: 10px;
     box-shadow: 10px 12px 10px rgba(60, 54, 78, 0.178);
-}
 
-.six-main-item button{
-    border-radius: 6px;
-    background-color: rgb(255, 174, 0);
-    color: white;
-    padding: 6px 8px;
-    text-align: center;
-    margin: 40px 0;
-    border: 0px;
-}
+    button{
+        border-radius: 6px;
+        background-color: rgb(255, 174, 0);
+        color: white;
+        padding: 6px 8px;
+        text-align: center;
+        margin: 40px 0;
+        border: 0px;
 
-.six-main-item button:hover{
-    cursor: pointer;
-    background-color: rgb(214, 146, 0);
-
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(214, 146, 0);
+        }
+    }
 }
 
 .six-name-item_1{
@@ -173,7 +172,7 @@ body{
     color: red;
 }
 
-/* lotery section */
+// lotery section
 
 .lotery{
     background: rgb(2,0,36);
@@ -182,10 +181,11 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 20px 0 20px;
-}
 
-.lotery-item img{
-    display: block;
+    img{
+        display: block;
+        object-fit: cover;
+    }
 }
 
 .lotery-text{
@@ -194,7 +194,7 @@ body{
 
 .lotery-text_1{
     font-size: larger;
-    color: red;
+    color: #001A9E;
 }
 
 .lotery-text_2{
@@ -204,11 +204,11 @@ body{
 
 .lotery-text_3{
     font-weight: bold;
-    color: rgb(21, 255, 0);
+    color: #001A9E;
     font-size: large;
 }
 
-/* order section */
+// order section
 
 .order{
     margin-left: 50px;
@@ -229,19 +229,33 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-}
+    
+    p{
+        font-size: 15px;
+        font-weight: bold;
+        color: #6cc76c;
+    }
 
-.order_section p{
-    font-size: 15px;
-    font-weight: bold;
-    color: #6cc76c;
-}
+    hr{
+        width: 100%;
+        border: none;
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.671);
+        margin-bottom: 24px;
+    }
 
-.order_section hr{
-    width: 100%;
-    border: none;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.671);
-    margin-bottom: 24px;
+    label{
+        font-weight: bold;
+    }
+
+    input{
+        padding: 10px;
+        margin: 10px 0 10px;
+        width: 300px;
+        border: 1px ;
+        background-color: rgb(214, 214, 214);
+        color: rgb(80, 80, 80);
+        box-shadow: 2px 2px 7px 4px rgba(0, 0, 0, 0.336);
+    }
 }
 
 .order-button {
@@ -255,101 +269,41 @@ body{
     color: #1cda1c;
     transition: .2s ease-in-out;
     cursor: pointer;
-  }
-  .order-button:before {
-    content: "";
-    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    top: -8px;
-    left: -75px;
-    transform: skewX(-45deg);
-  }
-  .order-button:hover {
-    background: #1cda1c;
-    color: white;
-  }
-  .order-button:hover:before {
-    left: 150px;
-    transition: .5s ease-in-out;
-  }
 
-.order_section label{
-    font-weight: bold;
+    &:before{
+        content: "";
+        background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: -8px;
+        left: -75px;
+        transform: skewX(-45deg);
+    }
+
+    &:hover{
+        background: #1cda1c;
+        color: white;
+    }
+
+    &:hover::before{
+        left: 150px;
+        transition: .5s ease-in-out;
+    }
 }
 
-.order_section input{
-    padding: 10px;
-    margin: 10px 0 10px;
-    width: 300px;
-    border: 1px ;
-    background-color: rgb(214, 214, 214);
-    color: rgb(80, 80, 80);
-    box-shadow: 2px 2px 7px 4px rgba(0, 0, 0, 0.336);
-}
-
-/* tp */
+// tp
 
 .tp{
     position: fixed;
     right: 10px;
     bottom: 10px;
-    cursor: pointer;
     transition: 0.2s ease-in-out;
-}
 
-.tp:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-/*Podarok */
-
-.podarok{
-    position: fixed;
-    left: 0;
-    top: 10px;
-    transition: 0.2s ease-in-out;
-}
-
-.podarok:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-
-.modal{
-    position: fixed;
-    display: none;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    padding-top: 100px;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(8, 6, 0, 0.4);
-}
-
-.modal-content{
-    background-color: rgb(230, 230, 230);
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 6px 6px 10px 2px rgba(29, 62, 86, 0.18);
-}
-
-.close{
-    color: rgb(161, 161, 161);
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover{
-    cursor: pointer;
-    color: #000;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
 }
 
 .modal-tp{
@@ -378,43 +332,90 @@ body{
     float: right;
     font-size: 28px;
     font-weight: bold;
+
+    &:hover{
+        cursor: pointer;
+        color: #000;
+    }
 }
 
-.close-tp:hover{
-    cursor: pointer;
-    color: #000;
+// podarok
+
+.podarok{
+    position: fixed;
+    left: 0;
+    top: 10px;
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
 }
 
-/* Рейтинг сайта */
+.modal{
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(8, 6, 0, 0.4);
+}
+
+.modal-content{
+    background-color: rgb(230, 230, 230);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 6px 6px 10px 2px rgba(29, 62, 86, 0.18);
+}
+
+.close{
+    color: rgb(161, 161, 161);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+    &:hover{
+        cursor: pointer;
+        color: #000;
+    }
+}
+
+// Рейтинг сайта
 
 .reset{
-	background-color:#d81919;
+	background-color:#D60015;
 	border-radius:8px;
     color: white;
 	font-size: 14px;
 	padding: 7px 30px;
     margin: 0 20px 20px;
     border: 0px;
-}
 
-.reset:hover {
-    cursor:pointer;
-	background-color:#b91212;
+    &:hover{
+        cursor:pointer;
+	    background-color:#C20013;
+    }
 }
 
 .send-rating{
-	background-color:#0e7be0;
+	background-color:#2C2CD3;
 	border-radius:8px;
-    color: white;
+    color: #39D58A;
 	font-size: 14px;
 	padding: 7px 30px;
     margin-bottom: 20px;
     border: 0px;
-}
 
-.send-rating:hover {
-    cursor:pointer;
-	background-color:#069eb5;
+    &:hover{
+        cursor:pointer;
+	    background-color:#3535D4;
+    }
 }
 
 .rating-button{
@@ -425,14 +426,13 @@ body{
 .rating-star{
     display: flex;
     justify-content: center;
-}
 
-.rating-star:hover{
-    cursor: pointer;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .rating{
     text-align: center;
     margin-bottom: 50px;
 }
-
