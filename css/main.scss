@@ -1,7 +1,20 @@
 header{
-    background: rgb(44,211,130);
-    background: linear-gradient(130deg, rgba(44,211,130,1) 39%, rgba(44,44,211,1) 92%);
+    background: rgb(44, 211, 130);
+    background: linear-gradient(130deg, rgba(44, 211, 130, 1) 39%, rgba(44, 44, 211, 1) 92%);
     padding: 20px 0;
+    animation: introLoad 1.7s forwards ease;
+}
+
+@keyframes introLoad{
+    from{
+        transform: translateY(-302px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 body{
@@ -315,7 +328,7 @@ body{
     padding-top: 100px;
     width: 100%;
     height: 100%;
-    background-color: rgb(8, 6, 0, 0.4);
+    background-color: rgba(8, 6, 0, 0.4);
 }
 
 .modal-content-tp{
@@ -344,7 +357,7 @@ body{
 .podarok{
     position: fixed;
     left: 0;
-    top: 10px;
+    bottom: 10px;
     transition: 0.2s ease-in-out;
 
     &:hover{
@@ -362,7 +375,7 @@ body{
     padding-top: 100px;
     width: 100%;
     height: 100%;
-    background-color: rgb(8, 6, 0, 0.4);
+    background-color: rgba(8, 6, 0, 0.4);
 }
 
 .modal-content{
@@ -423,6 +436,11 @@ body{
     justify-content: center;
 }
 
+.rating-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .rating-star{
     display: flex;
     justify-content: center;
@@ -432,7 +450,12 @@ body{
     }
 }
 
-.rating{
-    text-align: center;
-    margin-bottom: 50px;
+
+.logo{
+     width: 150px;
+     position: absolute;
+
+     &{
+         cursor: pointer;
+     }
 }

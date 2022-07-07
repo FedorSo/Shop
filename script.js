@@ -1,20 +1,3 @@
-// function print_contact(){
-
-//     const skype= "helper";
-//     const telegram= "@helper";
-
-//     alert(`Skype: ${skype} \nTelegram: ${telegram} \nТел. 8901006029`);
-
-//     console.log("Пользователь обратилься в техническую поддержку");
-// }
-
-// function free_prize(){
-
-//     alert("Поздравляем!\nВы получили подарок\nПерейдите по этой ссылке https://www.minecraft.net/ru-ru/download\nЧтобы забрать подарок");
-
-//     console.log("Пользователь взял подарок");
-// }
-
 // Рейтинг
 
 let siteRating = 0;
@@ -25,15 +8,9 @@ function star(starNumber) {
 
     starNumber = starNumber - 1;
 
-    // console.log(starNumber);
-
     let ids = ["star-1", "star-2", "star-3", "star-4", "star-5"];
 
-    // console.log(ids[starNumber]);
-
     let star = document.getElementById(ids[starNumber]);
-
-    // console.log(star);
 
     if (star.src.includes("Images/star_2.png")){
 
@@ -99,20 +76,13 @@ setRatingBtn.addEventListener("click", function (){
             text = "Пожалуйста поставте оценку сайта";
             break
     }
-    // console.log("Рейтинг отправлен!");
     document. getElementById("ratingText").innerText = text;
 
 })
 
 function rand_tshirt() {
-    // console.log("Привет");
 
     const arr = ["Images/tshirt-1.jpg", "Images/tshirt-2.jpg", "Images/tshirt-3.jpg", "Images/tshirt-6.png", "Images/tshirt-9.png", "Images/tshirt-11.png", "Images/tshirt-12.png","Images/tshirt-13.png", "Images/tshirt-14.png", "Images/tshirt-15.png", "Images/tshirt-16.png"];
-
-    // console.log(arr[0]);
-    // console.log(arr[1]);
-    // console.log(arr[2]);
-
 
 // Первая картинка
     let rand = Math.floor(Math.random() * arr.length);
@@ -135,7 +105,6 @@ const closeGift = document.getElementById("close");
 
 openGift.onclick = function (){
     modalGift.style.display = "block";
-    // console.log("Модальное окно");
 }
 
 closeGift.onclick = function (){
@@ -156,7 +125,6 @@ const closeTp = document.getElementById("closeTp");
 
 openTp.onclick = function (){
     modalTp.style.display = "block";
-//     console.log("Модальное окно");
 }
 
 closeTp.onclick = function (){
