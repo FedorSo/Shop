@@ -272,9 +272,9 @@ body{
 }
 
 .order-button {
-    display: inline-block;
+    display: block;
     padding: 10px 30px;
-    margin: 10px 20px;
+    margin: auto;
     position: relative;
     overflow: hidden;
     border: 2px solid #1cda1c;
@@ -455,7 +455,7 @@ body{
      width: 150px;
      position: absolute;
 
-     &{
+     &:hover{
          cursor: pointer;
      }
 }
